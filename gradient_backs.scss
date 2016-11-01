@@ -1,0 +1,60 @@
+
+$opacity: 0.4;
+.scottish {
+  background: rgba(0,0,0,$opacity/2);
+  position: relative;
+}
+$color1: rgba(0,105,0,$opacity);
+$color2: rgba(230,20,0,$opacity);
+$color3: rgba(0,0,200,$opacity);
+$sz: 2;
+
+.scottish::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background: -webkit-repeating-linear-gradient(-45deg, transparent 0,transparent $sz*5px, $color1 $sz*6px, $color1 $sz*10px,
+    transparent $sz*11px,transparent $sz*40px, $color1 $sz*41px, $color1 $sz*45px,
+    transparent $sz*46px,transparent $sz*50px, $color1 $sz*51px, $color1 $sz*55px,
+    transparent $sz*56px,transparent $sz*85px, $color1 $sz*86px, $color1 $sz*90px
+    ),
+     -webkit-repeating-linear-gradient(45deg, transparent 0,transparent $sz*5px, $color1 $sz*6px, $color1 $sz*10px,
+    transparent $sz*11px,transparent $sz*40px, $color1 $sz*41px, $color1 $sz*45px,
+    transparent $sz*46px,transparent $sz*50px, $color1 $sz*51px, $color1 $sz*55px,
+    transparent $sz*56px,transparent $sz*85px, $color1 $sz*86px, $color1 $sz*90px
+    ),//white
+     -webkit-repeating-linear-gradient(-45deg, transparent 0,transparent $sz*15px, $color2 $sz*16px, $color2 $sz*35px,
+    transparent $sz*36px,transparent $sz*60px, $color2 $sz*61px, $color2 $sz*80px,
+    transparent $sz*81px,transparent $sz*90px
+    ),
+     -webkit-repeating-linear-gradient(45deg, transparent 0,transparent $sz*15px, $color2 $sz*16px, $color2 $sz*35px,
+    transparent $sz*36px,transparent $sz*60px, $color2 $sz*61px, $color2 $sz*80px,
+    transparent $sz*81px,transparent $sz*90px
+    ),//red
+     -webkit-repeating-linear-gradient(-45deg, transparent 0,transparent $sz*24px, $color3 $sz*25px, $color3 $sz*27px,
+    transparent $sz*28px,transparent $sz*69px, $color3 $sz*70px, $color3 $sz*72px,
+    transparent $sz*74px,transparent $sz*90px
+    ),
+     -webkit-repeating-linear-gradient(-45deg, transparent 0,transparent $sz*24px, $color3 $sz*25px, $color3 $sz*27px,
+    transparent $sz*28px,transparent $sz*69px, $color3 $sz*70px, $color3 $sz*72px,
+    transparent $sz*74px,transparent $sz*90px
+    )//blue
+    ;
+}
+.carbon {
+  
+  background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+}

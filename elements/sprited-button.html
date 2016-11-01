@@ -1,0 +1,57 @@
+
+<dom-module id="sprited-button">
+  <template>
+    <style>
+      div.main {
+        content:"";
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        background-position: 0 -35px;
+        border-radius: 50%;
+        box-shadow: 0 3px 20px rgba(0,0,0,0.25), inset 0 3px 20px rgba(0,0,0,0.5),inset 0 0px 40px rgba(0,0,0,0.25);
+        text-align: center;
+      }
+      div.main:after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: -35px;
+        left: 0;
+        display: block;
+        opacity: .7;
+        background: url(http://defaulticon.com/images/icons32x32/power-standby.png?itok=v0FJtVin) no-repeat;
+        background-position: center;
+      }
+      div.main:hover {
+        background-position: 0 -72px;
+        box-shadow: 0 3px 20px rgba(0,0,0,0.25), inset 0 3px 20px rgba(0,0,0,0.5);
+      }
+      div.main:active {
+        background-position: 0 -110px;
+        box-shadow: 0 3px 20px rgba(0,0,0,0.5), inset 0 3px 20px rgba(0,0,0,0.5);
+      }
+      div.main:hover:after {
+        background-position: center 57%;
+      }
+      div.main:active:after {
+        background-position: center 60%;
+      }
+    </style>
+    <div class="main">
+      <p style="color: red"><content select="div"></content></p>
+      <p style="color: blue"><content select="span"></content></p>
+    </div>
+    
+  </template>
+  <script>
+    Polymer({
+      is: "sprited-button",
+      ready: function() {
+      }
+    });
+    
+  </script>
+  
+</dom-module>

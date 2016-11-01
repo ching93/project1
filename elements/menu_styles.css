@@ -1,0 +1,58 @@
+
+nav {
+  background: grey;
+  display: table;
+  margin: 0;
+  list-style: none;
+  font: 14pt "PT Sans", "Palatino Linotype", "Sans Serif";
+}
+nav li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  -moz-transition: width .2s ease-in-out, height .4s ease-in-out .2s;
+  -webkit-transition: width .2s ease-in-out, height .4s ease-in-out .2s;
+  transition:  width .2s ease-in-out, height .4s ease-in-out .2s;
+}
+nav li:hover {
+  width: 100%;
+  height: 200px;//нужно сделать поуниверсальнее - для произвольного кол-ва элементов
+}
+nav li a {
+  display: block;
+  color: white;
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+  -moz-transition: background .2s ease-in-out;
+  -webkit-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;
+}
+nav li a:hover {
+  background: deepskyblue;
+}
+nav li a:first-child {
+  font-size: 18pt;
+  text-indent: 40px;
+  height: 30px;
+}
+nav li a:first-child::before {
+  content:"";
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  opacity: .6;
+}
+.main_menu a:first-child::before {
+  background: url(../images/projector.png) no-repeat center;
+}
+.settings a:first-child::before {
+  background: url(../images/settings.png) no-repeat center;
+}
+.about a:first-child::before {
+  background: url(../images/about.png) no-repeat center;
+}

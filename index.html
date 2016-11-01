@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	  <link rel="import"  href="https://polygit2.appspot.com/components/polymer/polymer.html">
+    <script src="https://polygit2.appspot.com/components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="https://polygit2.appspot.com/components/paper-button/paper-button.html">
+    <link rel="import" href="elements/item-container.html" />
+    <link rel="import" href="elements/my-input.html" />
+    <link rel="import" href="elements/sprited-button.html" />
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="sassstyles.css" />
+    <style>
+    </style>
+	<title>Application</title>
+</head>
+<body>
+  <article>
+    <my-input placeholder="enter text" id="in-value"></my-input>
+    <paper-button raised onclick="add_item()">GO</paper-button>
+    <item-container id="item-container"></item-container>
+    <paper-button class="save-button" id="save-button" raised disabled onclick="save_items('items.json')">Save</paper-button>
+    <sprited-button><div>Text1</div><span>Second</span></sprited-button>
+  </article>
+  <input type="range" />
+<yes></yes>
+</body>
+</html>

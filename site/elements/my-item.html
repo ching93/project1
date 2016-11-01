@@ -1,0 +1,81 @@
+<link rel="import"  href="https://polygit2.appspot.com/components/polymer/polymer.html">
+<!-- import the iron-input custom element -->
+<link rel="import" href="https://polygit2.appspot.com/components/iron-input/iron-input.html">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<script src="http://yastatic.net/jquery/1.3.2/jquery.min.js"></script>
+
+<dom-module id="main-input">
+
+  <template>
+    <style>
+      input:hover {
+        border-color: green;
+      }
+      input:focus {
+        background: aliceblue;
+      }
+    </style>
+    <!-- bind to the "owner" property -->
+    <p><input is="iron-input" placeholder="enter it..." bind-value="{{value}}" /></p>
+    
+  </template>
+  
+  <script>
+  Polymer({
+    is: "main-input",
+    ready: function() {
+      // set this element's owner property
+    }
+  });
+  </script>
+  
+  <dom-module id="my-item">
+  <template>
+    <style>
+      p {
+        border: 1px solid lightskyblue;
+        background: aliceblue;
+        margin:1px;
+      }
+      i {
+        float: right;
+        cursor: pointer;
+      }
+      
+    </style>
+    <!-- bind to the "owner" property -->
+    <p>{{text}}<i class="fa fa-times" onclick="close_item(event)"></i></p>
+    
+  </template>
+  </dom-module>
+  <script>
+  Polymer({
+    is: "my-item",
+    ready: function() {
+      // set this element's owner property
+    }
+  });
+  </script>
+  
+  <dom-module id="item-container">
+    <template>
+      <template is="dom-repeat" items="{{array}}">
+        <input type="hidden" value="{{item.id}}" /><my-item text="{{item.value}}"></my-item>
+      </template>
+    </template>
+  </dom-module>
+  <script>Polymer({
+    is: "item-container",
+    ready: function() {
+      this.array=[];
+    },
+    addItem: function(value) {
+      let id = this.array.length;
+      this.push('array',{'id': id,'value':value});
+    },
+    removeItem(value) {
+      let index = this.array.indexOf({'value':value});
+      this.splice('array',index,1);
+    }
+  });
+  </script>

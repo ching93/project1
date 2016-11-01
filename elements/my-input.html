@@ -1,0 +1,25 @@
+
+<link rel="import" href="https://polygit2.appspot.com/components/iron-input/iron-input.html">
+
+<dom-module id="my-input">
+
+  <template>
+    <style>
+      input {
+	      border-radius: 10px;
+	      border: 2px solid grey;
+      }
+      
+    </style>
+    <p><input is="iron-input" placeholder="enter it..." bind-value="{{value}}" /></p>
+    
+  </template>
+  
+  <script>
+  Polymer({
+    is: "my-input",
+    ready: function() {
+    }
+  });
+  </script>
+</dom-module>

@@ -1,0 +1,21 @@
+.scottish {
+  background: rgba(0, 0, 0, 0.2);
+  position: relative; }
+
+.scottish::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background: -webkit-repeating-linear-gradient(-45deg, transparent 0, transparent 10px, rgba(0, 105, 0, 0.4) 12px, rgba(0, 105, 0, 0.4) 20px, transparent 22px, transparent 80px, rgba(0, 105, 0, 0.4) 82px, rgba(0, 105, 0, 0.4) 90px, transparent 92px, transparent 100px, rgba(0, 105, 0, 0.4) 102px, rgba(0, 105, 0, 0.4) 110px, transparent 112px, transparent 170px, rgba(0, 105, 0, 0.4) 172px, rgba(0, 105, 0, 0.4) 180px), -webkit-repeating-linear-gradient(45deg, transparent 0, transparent 10px, rgba(0, 105, 0, 0.4) 12px, rgba(0, 105, 0, 0.4) 20px, transparent 22px, transparent 80px, rgba(0, 105, 0, 0.4) 82px, rgba(0, 105, 0, 0.4) 90px, transparent 92px, transparent 100px, rgba(0, 105, 0, 0.4) 102px, rgba(0, 105, 0, 0.4) 110px, transparent 112px, transparent 170px, rgba(0, 105, 0, 0.4) 172px, rgba(0, 105, 0, 0.4) 180px), -webkit-repeating-linear-gradient(-45deg, transparent 0, transparent 30px, rgba(230, 20, 0, 0.4) 32px, rgba(230, 20, 0, 0.4) 70px, transparent 72px, transparent 120px, rgba(230, 20, 0, 0.4) 122px, rgba(230, 20, 0, 0.4) 160px, transparent 162px, transparent 180px), -webkit-repeating-linear-gradient(45deg, transparent 0, transparent 30px, rgba(230, 20, 0, 0.4) 32px, rgba(230, 20, 0, 0.4) 70px, transparent 72px, transparent 120px, rgba(230, 20, 0, 0.4) 122px, rgba(230, 20, 0, 0.4) 160px, transparent 162px, transparent 180px), -webkit-repeating-linear-gradient(-45deg, transparent 0, transparent 48px, rgba(0, 0, 200, 0.4) 50px, rgba(0, 0, 200, 0.4) 54px, transparent 56px, transparent 138px, rgba(0, 0, 200, 0.4) 140px, rgba(0, 0, 200, 0.4) 144px, transparent 148px, transparent 180px), -webkit-repeating-linear-gradient(-45deg, transparent 0, transparent 48px, rgba(0, 0, 200, 0.4) 50px, rgba(0, 0, 200, 0.4) 54px, transparent 56px, transparent 138px, rgba(0, 0, 200, 0.4) 140px, rgba(0, 0, 200, 0.4) 144px, transparent 148px, transparent 180px); }
+
+.carbon {
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px; }
+
+/*# sourceMappingURL=gradient_backs.css.map */

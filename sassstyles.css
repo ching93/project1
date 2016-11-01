@@ -1,0 +1,30 @@
+body {
+  background: aliceblue; }
+
+item-container {
+  background: #bde0ff;
+  border: 1px solid #004a8a;
+  width: 100%; }
+
+my-item {
+  background: #8ac8ff;
+  border: 1px solid #2499ff; }
+
+my-item:hover {
+  border-color: yellow; }
+
+my-item:focus {
+  border-color: #57b1ff; }
+
+article {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px; }
+
+paper-button {
+  max-width: 100px;
+  align-self: flex-end; }
+
+/*# sourceMappingURL=sassstyles.css.map */

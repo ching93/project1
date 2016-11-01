@@ -1,0 +1,41 @@
+/*
+Error: Invalid CSS after "#2e6bc6": expected expression (e.g. 1px, bold), was ";"
+        on line 1 of C:\project2\task\styles.sass
+
+1: $button-colour: #2e6bc6;
+2: $button-start: #37a0dc;
+3: $button-stop: #2068a6;
+4: $border: #163861;
+5: $text-shadow: #06304b;
+6:  
+
+Backtrace:
+C:\project2\task\styles.sass:1
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/lexer.rb:220:in `expected!'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:602:in `assert_done'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:63:in `parse'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:183:in `parse'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/script.rb:27:in `parse'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:1120:in `parse_script'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:743:in `parse_variable'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:631:in `parse_line'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:525:in `build_tree'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:544:in `block in append_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `each'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `append_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:396:in `_to_tree'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files/Koala/bin/sass:18:in `load'
+C:/Program Files/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"#2e6bc6\": expected expression (e.g. 1px, bold), was \";\"\A         on line 1 of C:\project2\task\styles.sass\A \A 1: $button-colour: #2e6bc6;\A 2: $button-start: #37a0dc;\A 3: $button-stop: #2068a6;\A 4: $border: #163861;\A 5: $text-shadow: #06304b;\A 6:  "; }

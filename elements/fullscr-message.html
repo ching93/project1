@@ -1,0 +1,53 @@
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<dom-module id="fullscr-message">
+  <template>
+    <style>
+      .back {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+      }
+      .content {
+        background: rgba(255,255,255,1);
+        border-radius: 4px;
+        top:20%;
+        left: 20%;
+        width:60%;
+        height: 60%;
+        display: block;
+        position: fixed;
+        overflow: hidden;
+      }
+      .exit {
+        position: fixed;
+        display: block;
+        right: 3px;
+        top: 3px;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: transform .5s;
+        background: rgba(255,255,255,.8);
+        border-radius: 50% 50%;
+        font-size:14pt;
+      }
+      .exit:hover {
+        transform: rotate(360deg);
+      }
+    </style>
+    <div class="back">
+      <div class="content"><content></content></div>
+    </div>
+      <i class="exit fa fa-times"></i>
+  </template>
+  <script>
+    Polymer({is: "fullscr-message",
+      ready: function(){
+        
+      }
+    });
+  </script>
+</dom-module>

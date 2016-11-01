@@ -1,0 +1,36 @@
+$back_color: aliceblue;
+
+body {
+	background: $back_color;
+}
+
+item-container {
+	background: darken($back_color,10%);
+	border: 1px solid darken($back_color,70%);
+	width: 100%;
+}
+my-item {
+	background: darken($back_color,20%);
+	border: 1px solid darken($back_color,40%);
+}
+my-item:hover {
+  border-color: yellow;
+}
+my-item:focus {
+  border-color: darken($back_color,30%);
+}
+
+article {
+	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 300px;
+}
+paper-button {
+  max-width: 100px;
+  align-self: flex-end;
+}
+paper-not-button {
+
+}

@@ -1,0 +1,33 @@
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <dom-module id="my-item">
+  <template>
+    <style>
+      i {
+        float: right;
+        cursor: pointer;
+        transition: transform .2s;
+      }
+      p:hover i {
+        -webkit-transform: rotate(360deg);
+      }
+    </style>
+    <p>{{text}}<i class="fa fa-times" on-tap="close_item(event)"></i></p>
+    
+  </template>
+  <script>
+  Polymer({
+    is: "my-item",
+    properties: {
+      close_item: function(e) {
+        let item = event.model.item;
+        this.parentElement.removeItem(this.item_id);
+      }
+    },
+    ready: function() {
+      this.item_id = -1;
+    }
+  });
+  </script>
+  </dom-module>
+  

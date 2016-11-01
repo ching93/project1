@@ -1,0 +1,25 @@
+
+.scottish {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,1), inset 0 10px 40px rgba(0,0,0,1);
+  //background: url(http://lorempixel.com/600/300) no-repeat center;
+  margin: 20px;
+  position: relative;
+}
+
+.scottish::after {
+  content: "";
+  width: 600px;
+  height: 300px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-repeating-linear-gradient(-45deg, transparent 0,transparent 15px, rgba(200,0,0,.6) 15px, rgba(220,0,0,.6) 35px,
+    transparent 35px,transparent 75px, rgba(200,0,0,.6) 75px, rgba(220,0,0,.6) 95px,
+    transparent 95px,transparent 110px, rgba(200,0,0,.6) 110px, rgba(220,0,0,.6) 130px,
+    transparent 130px, transparent 145px, rgba(200,0,0,.6) 145px, rgba(220,0,0,.6) 165px,
+    transparent 165px, transparent 205px, rgba(200,0,0,.6) 205px, rgba(220,0,0,.6) 225px,
+    transparent 225px,transparent 240px);
+}
